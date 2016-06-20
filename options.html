@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Options - Facebook and Messenger Notifications</title>
+        <link rel="stylesheet" type="text/css" href="options.css" />
+    </head>
+
+    <body>
+        <div id="navbar-container"><h1>Options</h1></div>
+        <div id="mainview-content">
+            <h1><img src="icon.png" alt="[icon]" /> Facebook and Messenger Notifications</h1>
+            <p>
+                <label>If there are messages and facebook notifications, open:<br/>
+                http://<select id="hostNew">
+                    <option>www.facebook.com/</option>
+                    <option>www.messenger.com/</option>
+                </select><input type="text" id="pathNew" /></label> [default: www.facebook.com/messages]
+            </p>
+            <p>
+                <label>If there are only messages, open:<br/>
+                http://<select id="hostMsg">
+                    <option>www.facebook.com/</option>
+                    <option>www.messenger.com/</option>
+                </select><input type="text" id="pathMsg" /></label> [default: www.messenger.com/]
+            </p>
+            <p>
+                <label>If there are only facebook notifications, open:<br/>
+                http://<select id="hostFbn">
+                    <option>www.facebook.com/</option>
+                    <option>www.messenger.com/</option>
+                </select><input type="text" id="pathFbn" /></label> [default: www.facebook.com/notifications]
+            </p>
+            <p>
+                <label>If there are no messages, open:<br/>
+                http://<select id="hostZero">
+                    <option>www.facebook.com/</option>
+                    <option>www.messenger.com/</option>
+                </select><input type="text" id="pathZero" /></label> [default: www.facebook.com/]
+            </p>
+            <p><label><input type="checkbox" id="showFbn" /> Display Facebook Notifications also.</label> [default: yes]</p>
+            <p><label><input type="checkbox" id="useHttps" /> Use https instead of http.</label> [default: no]</p>
+            <p><label><input type="checkbox" id="alwaysNew" /> Always open on a new tab.</label> [default: no]</p>
+            <p><label><input type="checkbox" id="showZero" /> On zero messages, show "0".</label> [default: no]</p>
+            <p><label><input type="checkbox" id="playSound" /> On new messages, play a sound.</label> [default: yes]</p>
+            <p><label><input type="checkbox" id="showNoti" /> On new messages, show desktop notifications.</label> [default: yes]</p>
+            <p>Refresh interval (minutes):<input type="text" id="refreshInterval" /> [default: 5]</p>
+            <p><button type="button" id="saveButton">Save</button> <button type="button" id="restoreButton">Restore Default</button></p>
+
+            <h2>Optional Permissions</h2>
+            <p><label><input type="checkbox" id="useBg" /> Run this extension on background (Keeps working even after closing Google Chrome).</label></p>
+
+            <h2>License</h2>
+            <p>Fork Code, ©2016 Kenijo.</p>
+            <p>Original Code, ©2011-2012 daPhyre.</p>
+            <p>Based on the base code from <a href="http://github.com/daPhyre/notifications-crx">http://github.com/daPhyre/notifications-crx</a>.</p>
+        </div>
+
+        <script type="text/javascript" src="options.js"></script>
+    </body>
+</html>

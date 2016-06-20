@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #333;
+    font: 13px 'Liberation Sans', Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 200%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0.5em 1em;
+    text-shadow: #fff 0 1px 2px;
+}
+h2 {
+    padding: 0 2em;
+}
+p {
+    padding: 0 2em;
+}
+
+#navbar-container {
+    background: #eee;
+    border-right: 1px solid #ccc;
+    position: fixed;
+    width: 216px;
+    height: 100%;
+}
+#navbar-container h1 {
+    padding-end: 24px;
+    text-align: end;
+}
+#mainview-content {
+    margin-left: 216px;
+}
